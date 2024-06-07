@@ -1,0 +1,19 @@
+car:
+  dailyRate: 50
+  nightRate: 100
+
+client:
+  adresses:
+    berezovayaRosha:
+      unit: km
+      distance: 10
+    kandikulya:
+      unit: km
+      distance: 4
+    stroitel:
+      unit: km
+      distance: 12
+
+taxi-company:
+  name: "Amir taxi"
+
