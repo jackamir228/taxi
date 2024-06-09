@@ -23,7 +23,6 @@ public class CarDefault extends Car {
         super(carProperties, uuid);
         this.carProperties = carProperties;
     }
-
     @PostConstruct
     @Override
     public void init() {

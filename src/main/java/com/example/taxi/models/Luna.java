@@ -23,11 +23,9 @@ import java.util.UUID;
 @Component
 public class Luna extends Car {
 
-
     public Luna(CarProperties carProperties,  @Qualifier("uuidForLuna")UUID uuid) {
         super(carProperties, uuid );
     }
-
     @PostConstruct
     @Override
     public void init() {

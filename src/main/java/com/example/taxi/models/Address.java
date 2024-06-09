@@ -10,7 +10,6 @@ import lombok.experimental.FieldDefaults;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @AllArgsConstructor
 public class Address {
-    //TODO переделать класс адрес, добавив туда поле имя.
     String unit;
     String name;
     int distance;

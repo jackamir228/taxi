@@ -60,7 +60,6 @@ public abstract class Car {
      * @return На основании адреса, узнаем сколько ехать, и считаем сумму заработанных денег (ставка * км).
      * *50% оставляем себе, 50% идет в таксопарк.
      */
-    //TODO переделать метод с изменненным классом Address
     public BigDecimal acceptTheOrder(Client client, boolean isDay) {
         String name = client.getAddress().getName();
         if ((name.contains("berezovayaRosha") || name.contains("kandikulya")
@@ -72,7 +71,6 @@ public abstract class Car {
         }
     }
 
-    //TODO переделать метод с изменненным классом Address
     private BigDecimal incomeCalculation(BigDecimal rate, Client client) {
         Address address = client.getAddress();
         int distance = address.getDistance();

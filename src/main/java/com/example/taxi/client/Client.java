@@ -22,7 +22,6 @@ import java.util.Map;
 public class Client {
    Address address;
 
-    @Autowired
     public Client(Address address) {
         this.address = address;
     }

@@ -56,15 +56,15 @@ public class TaxiCompany {
             car.acceptTheOrder(client, isDay);
             taxiProfit = car.getTaxiCompanyProfit();
         } catch (TaxiProfitException ignored) {
-
+                return taxiProfit;
         }
-        return taxiProfit;
+        return car.getTotalIncome();
     }
 
     public void createReport(Car... cars) {
-        try (FileWriter writer = new FileWriter("report.txt", false)) {
+        try (FileWriter writer = new FileWriter("C:\\Users\\gilma\\IdeaProjects\\taxi\\src\\main\\resources\\report.txt", true)) {
             for (Car car : cars) {
-                writer.write(taxiCompanyProperties.getName());
+                writer.write( "\n\n" + taxiCompanyProperties.getName());
                 writer.write("\nЗаработано: " + taxiProfit);
                 writer.write("\nВодитель машины " + car.getUuid() + " заработал: " + car.getTotalIncome());
                 writer.close();
@@ -74,4 +74,3 @@ public class TaxiCompany {
         }
     }
 }
-
